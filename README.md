@@ -20,23 +20,6 @@
 
 ---
 
-## The Problem
-
-Right now, Google knows:
-- Every email you sent (Gmail)
-- Every file you stored (Drive)
-- Every place you went (Maps/Timeline)
-- Every site you visited (Chrome)
-- Every photo you took (Photos)
-- Every question you asked (Search)
-- Every word you spoke (Assistant)
-
-**That's not a service. That's surveillance.**
-
-Sovereign Stack gives you the exact steps — with scripts — to replace all of it with privacy-respecting alternatives you control.
-
----
-
 ## The Journey
 
 5 phases. Each one builds on the last. Start wherever you are.
