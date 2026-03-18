@@ -241,11 +241,11 @@ This is the nuclear option. GrapheneOS removes all Google services from your Pix
 
 ## Desktop Apps (Flatpak)
 
-Run the Phase 3 script to install everything:
+Run the install script to install everything:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase3-warrior.sh -o phase3.sh
-bash phase3.sh
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/install.sh -o install.sh
+bash install.sh --local
 ```
 
 Or install individually:

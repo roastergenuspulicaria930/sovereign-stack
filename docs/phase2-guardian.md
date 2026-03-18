@@ -70,10 +70,10 @@ Install these in order of importance:
 
 ### Automated (user.js)
 
-Run the Phase 2 script:
+Run the install script:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase2-guardian.sh -o phase2.sh
-bash phase2.sh
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/install.sh -o install.sh
+bash install.sh --local
 ```
 
 ### Manual (about:config)

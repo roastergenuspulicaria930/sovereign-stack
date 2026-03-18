@@ -104,12 +104,12 @@ sync
 
 ### 5. Post-install
 
-Run the Phase 1 script or do it manually:
+Run the install script or do it manually:
 
 ```bash
 # Automated
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase1-hero.sh -o phase1.sh
-bash phase1.sh
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/install.sh -o install.sh
+bash install.sh --local
 ```
 
 **Or manually:**

@@ -47,13 +47,20 @@
 ### One-button install
 
 ```bash
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/install.sh -o install.sh
+chmod +x install.sh
+
 # Local machine (phases 1-3):
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/sovereign-local.sh | bash
+bash install.sh --local
 
 # VPS (phases 4-5):
-ssh root@YOUR_VPS_IP
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/sovereign-vps.sh -o sovereign.sh
-bash sovereign.sh --all --domain yourdomain.com
+bash install.sh --vps --all --domain yourdomain.com
+
+# Pre-flight checks only:
+bash install.sh --check
+
+# Uninstall everything:
+bash install.sh --uninstall
 ```
 
 ---
@@ -73,8 +80,8 @@ bash sovereign.sh --all --domain yourdomain.com
 ### Quick start
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase1-hero.sh -o phase1.sh
-bash phase1.sh
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/install.sh -o install.sh
+bash install.sh --local
 ```
 
 ### Manual guide
@@ -119,8 +126,7 @@ bash phase1.sh
 ### Quick start
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase2-guardian.sh -o phase2.sh
-bash phase2.sh
+bash install.sh --local
 ```
 
 ### Manual guide
@@ -182,8 +188,7 @@ bash phase2.sh
 ### Quick start
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase3-warrior.sh -o phase3.sh
-bash phase3.sh
+bash install.sh --local
 ```
 
 ### Priority order (do these first)
@@ -240,13 +245,13 @@ This is where you get your own VPS and self-host everything.
 ssh root@YOUR_VPS_IP
 
 # Download and run
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase4-knight.sh -o phase4.sh
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/install.sh -o install.sh
 
-# Install all human services
-bash phase4.sh --all --domain yourdomain.com
+# Install all services
+bash install.sh --vps --all --domain yourdomain.com
 
 # Or pick what you need
-bash phase4.sh --nextcloud --vaultwarden --searxng --domain yourdomain.com
+bash install.sh --vps --nextcloud --vaultwarden --searxng --domain yourdomain.com
 ```
 
 ### VPS Providers (privacy-friendly)
@@ -292,8 +297,7 @@ bash phase4.sh --nextcloud --vaultwarden --searxng --domain yourdomain.com
 ### Quick start
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase5-sovereign.sh -o phase5.sh
-bash phase5.sh --domain yourdomain.com
+bash install.sh --vps --all --domain yourdomain.com
 ```
 
 ### The final checklist
@@ -370,15 +374,9 @@ sovereign-stack/
 ├── LICENSE                      <- AGPL v3
 ├── CONTRIBUTING.md
 ├── skills/
-│   └── sovereign/SKILL.md        <- Claude Code skill
+│   └── sovereign/SKILL.md       <- Claude Code skill
 ├── scripts/
-│   ├── sovereign-local.sh       <- One-button local (phases 1-3)
-│   ├── sovereign-vps.sh         <- One-button VPS (phases 4-5)
-│   ├── phase1-hero.sh           <- Linux post-install essentials
-│   ├── phase2-guardian.sh       <- Firefox hardening + extensions
-│   ├── phase3-warrior.sh        <- App replacements helper
-│   ├── phase4-knight.sh         <- VPS self-hosted deploy
-│   └── phase5-sovereign.sh      <- Full integration + hardening
+│   └── install.sh               <- One script does everything
 └── docs/
     ├── phase1-hero.md           <- Detailed Phase 1 guide
     ├── phase2-guardian.md       <- Detailed Phase 2 guide
@@ -406,7 +404,7 @@ sovereign-stack/
 **Your sovereignty starts with Phase 1.**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/sovereign-local.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/install.sh | bash -s -- --local
 ```
 
 [Star this repo](../../stargazers) if you believe privacy is a right, not a product.

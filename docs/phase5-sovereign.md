@@ -24,10 +24,10 @@ After this phase:
 Caddy gives you automatic HTTPS certificates for all your services.
 
 ```bash
-# Run Phase 5 script
+# Run the install script
 ssh root@YOUR_VPS_IP
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase5-sovereign.sh -o phase5.sh
-bash phase5.sh --domain yourdomain.com
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/install.sh -o install.sh
+bash install.sh --vps --domain yourdomain.com
 ```
 
 **What it configures:**
@@ -54,7 +54,7 @@ Your own VPN means:
 - You can access all services securely from anywhere
 - All DNS queries go through your AdGuard Home
 
-### Server setup (done by Phase 5 script)
+### Server setup (done by `install.sh --vps`)
 
 The script creates `/etc/wireguard/wg0.conf` with a server config.
 

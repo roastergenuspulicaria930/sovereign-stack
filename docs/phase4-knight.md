@@ -130,14 +130,14 @@ A    dns         → YOUR_VPS_IP
 ssh root@YOUR_SERVER_IP
 
 # Download and run
-curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/scripts/phase4-knight.sh -o phase4.sh
-chmod +x phase4.sh
+curl -fsSL https://raw.githubusercontent.com/Michae2xl/sovereign-stack/main/install.sh -o install.sh
+chmod +x install.sh
 
 # Install everything
-bash phase4.sh --all --domain yourdomain.com
+bash install.sh --vps --all --domain yourdomain.com
 
 # Or pick what you need
-bash phase4.sh --nextcloud --vaultwarden --searxng --domain yourdomain.com
+bash install.sh --vps --nextcloud --vaultwarden --searxng --domain yourdomain.com
 ```
 
 ### What each flag installs
@@ -275,7 +275,7 @@ Go to `http://YOUR_IP:3000` for initial setup.
 
 ### WireGuard (Your Own VPN)
 
-Phase 5 script sets this up. After it's running:
+The install script (`install.sh --vps`) sets this up. After it's running:
 
 **On your phone:**
 1. Install WireGuard app
@@ -359,7 +359,7 @@ sudo ufw allow 8081/tcp  # Vaultwarden
 - [ ] VPS ordered and accessible via SSH
 - [ ] SSH key authentication configured
 - [ ] Domain pointed to VPS (optional)
-- [ ] Phase 4 script executed
+- [ ] Install script executed (`install.sh --vps`)
 - [ ] Nextcloud running and accessible
 - [ ] Vaultwarden running, passwords imported
 - [ ] SearXNG running, set as default search
