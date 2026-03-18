@@ -12,7 +12,7 @@
 
 [Start Now](#phase-1-hero) · [The Journey](#the-journey) · [FAQ](#faq) · [Why](#why)
 
-**[Claude Code Skill](skills/sovereign/SKILL.md)**
+**Skill:** [Sovereign](skills/sovereign/SKILL.md)
 
 ---
 
